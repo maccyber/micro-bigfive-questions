@@ -1,0 +1,50 @@
+{
+  "name": "micro-bigfive-questions",
+  "description": "micro webservice that serves bigfive questions",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Jonas Enge",
+    "email": "jonas.enge@gmail.com",
+    "url": "https://github.com/maccyber"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=6.9.1"
+  },
+  "now": {
+    "engines": {
+      "node": "6.9.1"
+    }
+  },
+  "scripts": {
+    "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
+    "test-offline": "standard && tap --reporter=spec test/**/*.js",
+    "coverage": "tap test/**/*.js --coverage",
+    "coveralls": "tap --cov --coverage-report=lcov test/**/*.js && cat coverage/lcov.info | coveralls",
+    "setup": "npm install",
+    "standard-fix": "standard --fix",
+    "start": "micro -p 3000"
+  },
+  "keywords": [
+    "microservice",
+    "micro",
+    "bigfive"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/maccyber/micro-bigfive-questions.git"
+  },
+  "bugs": {
+    "url": "http://github.com/zrrrzzt/micro-bigfive-questions/issues"
+  },
+  "devDependencies": {
+    "coveralls": "2.11.15",
+    "nsp": "2.6.2",
+    "standard": "8.6.0",
+    "tap": "9.0.3"
+  },
+  "dependencies": {
+    "micro": "6.2.0"
+  }
+}
