@@ -36,7 +36,7 @@
     "url": "http://github.com/maccyber/micro-bigfive-questions.git"
   },
   "bugs": {
-    "url": "http://github.com/zrrrzzt/micro-bigfive-questions/issues"
+    "url": "http://github.com/maccyber/micro-bigfive-questions/issues"
   },
   "devDependencies": {
     "coveralls": "2.11.15",
