@@ -46,5 +46,8 @@
   },
   "dependencies": {
     "micro": "6.2.0"
+  },
+  "now": {
+    "alias": "bigfive-questions.now.sh"
   }
 }
