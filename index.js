@@ -12,12 +12,7 @@ module.exports = async (req, res) => {
       langCode: data.lang || 'en',
       limit: parseInt(data.limit) || 5
     }
-    const questions = getQuestions(opts)
-    if (!questions) {
-      send(res, 404)
-    } else {
-      send(res, 200, questions)
-    }
+    send(res, 200, getQuestions(opts))
   } catch (err) {
     send(res, 500, err)
   }
