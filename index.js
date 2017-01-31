@@ -14,5 +14,6 @@ module.exports = async (req, res) => {
   }
   const q = getQuestions(opts)
   let status = q.error ? 500 : 200
+  res.setHeader('Access-Control-Allow-Origin', '*')
   send(res, status, q)
 }
