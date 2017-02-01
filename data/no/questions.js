@@ -1,4 +1,27 @@
-module.exports = [
+module.exports.choises = [
+  {
+    val: 1,
+    text: 'Svært lite treffende'
+  },
+  {
+    val: 2,
+    text: 'Lite treffende'
+  },
+  {
+    val: 3,
+    text: 'Treffer verden bra eller dårlig'
+  },
+  {
+    val: 4,
+    text: 'Ganske treffende'
+  },
+  {
+    val: 5,
+    text: 'Veldig treffende'
+  }
+]
+
+module.exports.default = [
   'Empty',
   'Bekymrer meg for mye',
   'Har lett for å få venner',

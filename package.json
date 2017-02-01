@@ -10,7 +10,7 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=6.9.1"
+    "node": ">=7.0.0"
   },
   "now": {
     "engines": {

@@ -1,4 +1,27 @@
-module.exports = [
+module.exports.choises = [
+  {
+    val: 1,
+    text: 'Very Inaccurate'
+  },
+  {
+    val: 2,
+    text: 'Moderately Inaccurate'
+  },
+  {
+    val: 3,
+    text: 'Neither Accurate Nor Inaccurate'
+  },
+  {
+    val: 4,
+    text: 'Moderately Accurate'
+  },
+  {
+    val: 5,
+    text: 'Very Accurate'
+  }
+]
+
+module.exports.default = [
   'Empty',
   'Worry about things',
   'Make friends easily',
