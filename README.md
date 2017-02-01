@@ -77,9 +77,9 @@ Both returns
 Set ```lang``` to code
 
 | Code | Name |
-|-|-|
-|en|English|
-|no|Norwegian|
+| ---- | ---- |
+| en   | English |
+| no   | Norwegian |
 
 
 ## Deploy using [Now](https://zeit.co/now)
