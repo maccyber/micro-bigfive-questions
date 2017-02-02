@@ -9,7 +9,7 @@ module.exports.choises = [
   },
   {
     val: 3,
-    text: 'Treffer verden bra eller dårlig'
+    text: 'Treffer verken bra eller dårlig'
   },
   {
     val: 4,
