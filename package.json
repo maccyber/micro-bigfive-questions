@@ -3,19 +3,22 @@
   "description": "micro webservice that serves bigfive questions",
   "version": "1.0.0",
   "license": "MIT",
+  "private": true,
   "author": {
     "name": "Jonas Enge",
     "email": "jonas.enge@gmail.com",
     "url": "https://github.com/maccyber"
   },
+  "contributors": [
+    {
+      "name": "Geir Gåsodden",
+      "email": "geir.gasodden@pythonia.no",
+      "url": "https://github.com/zrrrzzt"
+    }
+  ],
   "main": "index.js",
   "engines": {
     "node": ">=7.0.0"
-  },
-  "now": {
-    "engines": {
-      "node": "7.0.0"
-    }
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
@@ -42,12 +45,17 @@
     "coveralls": "2.11.15",
     "nsp": "2.6.2",
     "standard": "8.6.0",
-    "tap": "9.0.3"
+    "tap": "10.0.2"
   },
   "dependencies": {
-    "micro": "6.2.0"
+    "micro": "6.2.1"
   },
   "now": {
-    "alias": "bigfive-questions.now.sh"
+    "aliases": [
+      "bigfive-questions.now.sh"
+    ],
+    "env": {
+      "NODE_ENV": "production"
+    }
   }
 }
