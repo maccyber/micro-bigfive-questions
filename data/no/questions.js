@@ -76,7 +76,7 @@ module.exports.default = [
   'Hengir meg sjelden til noe eller noen',
   'Søker eventyr og spenning',
   'Unngår filosofiske diskusjoner',
-  'Har høye tanker om meg selv',
+  'Tenker høyt om meg selv',
   'Realiserer planene mine',
   'Blir overveldet av det som skjer',
   'Har mye moro',
