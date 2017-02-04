@@ -1,10 +1,10 @@
 'use strict'
 
 const tap = require('tap')
-const calculatePersonality = require('../../lib/calculate-personality')
-const template = require('../../data/en/questions-short')
+const calculateScore = require('../../lib/calculate-score')
+const template = require('../../data/en/questions-10-item-scale')
 const answers = require('../data/answers-short-median.json')
-const score = calculatePersonality({template: template, answers: answers})
+const score = calculateScore({template: template, answers: answers})
 
 tap.equal(score['E'], 20, 'It calculates 20 for E')
 
