@@ -8,7 +8,7 @@ const compileQuestions = require('./lib/compile-questions')
 
 module.exports = async (req, res) => {
   let result = {}
-  const {pathname, query} = await parse(request.url, true)
+  const {pathname, query} = await parse(req.url, true)
   const data = req.method === 'POST' ? await json(req) : query
 
   if (pathname === '/calculate') {
