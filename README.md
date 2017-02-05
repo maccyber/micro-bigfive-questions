@@ -2,7 +2,9 @@
 
 Example: https://bigfive-questions.now.sh/
 
-micro webservice that returs bigfive questions
+micro webservice that returs bigfive questions and calculates score
+
+## Questions
 
 ```sh
 $ curl -v http://localhost:3000 -d '{"page": 1, "lang": "en", "limit": 5}'
@@ -69,6 +71,37 @@ Both returns
       "text":"Complete tasks successfully"
     }
   ]
+}
+```
+
+## Calculate score
+
+```POST```
+
+```/calculate```
+
+```JavaScript
+{
+  lang: '<lang-code>',
+  items: '<10 or 20>',
+  answers: [
+    {
+      id: '<question-id>',
+      score: '<question-score>'
+    }
+  ]
+}
+```
+
+returns score for each factor
+
+```JavaScript
+{ 
+  E: 30, 
+  A: 30, 
+  C: 30, 
+  N: 30, 
+  O: 30 
 }
 ```
 
