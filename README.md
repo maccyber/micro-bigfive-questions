@@ -143,6 +143,133 @@ Both returns
           "text":"Very Accurate",
           "value":5
         }
+{  
+  "totalQuestions":120,
+  "limit":5,
+  "totalPages":24,
+  "percentDone":4,
+  "page":1,
+  "langCode":"en",
+  "languages":[  
+    "en",
+    "no"
+  ],
+  "from":1,
+  "to":6,
+  "testInfo":{  
+    "test":"Johnson-120-IPIP-NEO-PI-R",
+    "link":"http://ipip.ori.org/30FacetNEO-PI-RItems.htm",
+    "info":"test info ..."
+  },
+  "next":"https://localhost:3000/getQuestions?page=2",
+  "previous":false,
+  "questions":[  
+    {  
+      "id":1,
+      "text":"Worry about things",
+      "facet":"N1",
+      "choises":[  
+        {  
+          "text":"Very Inacurate",
+          "value":1
+        },
+        {  
+          "text":"Moderately Inacurate",
+          "value":2
+        },
+        {  
+          "text":"Neither Accurate Nor Inaccurate",
+          "value":3
+        },
+        {  
+          "text":"Moderately Accurate",
+          "value":4
+        },
+        {  
+          "text":"Very Accurate",
+          "value":5
+        }
+      ]
+    },
+    {  
+      "id":2,
+      "text":"Make friends easily",
+      "facet":"E1",
+      "choises":[  
+        {  
+          "text":"Very Inacurate",
+          "value":1
+        },
+        {  
+          "text":"Moderately Inacurate",
+          "value":2
+        },
+        {  
+          "text":"Neither Accurate Nor Inaccurate",
+          "value":3
+        },
+        {  
+          "text":"Moderately Accurate",
+          "value":4
+        },
+        {  
+          "text":"Very Accurate",
+          "value":5
+        }
+      ]
+    },
+    {  
+      "id":3,
+      "text":"Have a vivid imagination",
+      "facet":"O1",
+      "choises":[  
+        {  
+          "text":"Very Inacurate",
+          "value":1
+        },
+        {  
+          "text":"Moderately Inacurate",
+          "value":2
+        },
+        {  
+          "text":"Neither Accurate Nor Inaccurate",
+          "value":3
+        },
+        {  
+          "text":"Moderately Accurate",
+          "value":4
+        },
+        {  
+          "text":"Very Accurate",
+          "value":5
+        }
+      ]
+    },
+    {  
+      "id":4,
+      "text":"Trust others",
+      "facet":"A1",
+      "choises":[  
+        {  
+          "text":"Very Inacurate",
+          "value":1
+        },
+        {  
+          "text":"Moderately Inacurate",
+          "value":2
+        },
+        {  
+          "text":"Neither Accurate Nor Inaccurate",
+          "value":3
+        },
+        {  
+          "text":"Moderately Accurate",
+          "value":4
+        },
+        {  
+          "text":"Very Accurate",
+          "value":5
+        }
       ]
     },
     {  
@@ -178,34 +305,7 @@ Both returns
 
 ## Calculate score
 
-```POST```
-
-```/calculate```
-
-```JavaScript
-{
-  lang: '<lang-code>',
-  items: '<10 or 20>',
-  answers: [
-    {
-      id: '<question-id>',
-      score: '<question-score>'
-    }
-  ]
-}
-```
-
-returns score for each factor
-
-```JavaScript
-{ 
-  E: 30, 
-  A: 30, 
-  C: 30, 
-  N: 30, 
-  O: 30 
-}
-```
+See [micro-bigfive-evaluator](https://github.com/maccyber/micro-bigfive-evaluator)
 
 ## Supported languages
 
