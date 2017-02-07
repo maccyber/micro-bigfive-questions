@@ -1,29 +1,28 @@
 'use strict'
 
+const readFileSync = require('fs').readFileSync
+const marked = require('marked')
 const { parse } = require('url')
 const { json, send } = require('micro')
 const getQuestions = require('./lib/get-questions')
-const calculateScore = require('./lib/calculate-score')
-const compileQuestions = require('./lib/compile-questions')
 
 module.exports = async (req, res) => {
-  let result = {}
-  const {pathname, query} = await parse(req.url, true)
+  const {query, pathname} = await parse(req.url, true)
   const data = req.method === 'POST' ? await json(req) : query
-
-  if (pathname === '/calculate') {
-    result = calculateScore({template: compileQuestions({language: data.lang, items: data.items}), answers: data.answers})
-  } else {
+  let result = {}
+  if (pathname === '/getQuestions') {
     const opts = {
-      url: req.encrypted ? `https://${req.headers.host}` : `https://${req.headers.host}`,
+      url: req.encrypted ? `https://${req.headers.host}/getQuestions` : `https://${req.headers.host}/getQuestions`,
       page: parseInt(data.page) || 1,
       langCode: data.lang || 'en',
       testType: data.testType || '120',
       limit: parseInt(data.limit) || 5
     }
     result = getQuestions(opts)
+  } else {
+    const readme = readFileSync('./README.md', 'utf-8')
+    result = marked(readme)
   }
-
   let status = result.error ? 500 : 200
   res.setHeader('Access-Control-Allow-Origin', '*')
   send(res, status, result)

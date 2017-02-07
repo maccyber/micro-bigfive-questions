@@ -7,11 +7,11 @@ micro webservice that returs bigfive questions and calculates score
 ## Questions
 
 ```sh
-$ curl -v http://localhost:3000 -d '{"page": 1, "lang": "en", "limit": 5, testType: "120" }'
+$ curl -v http://localhost:3000/getQuestions -d '{"page": 1, "lang": "en", "limit": 5, testType: "120" }'
 ```
 
 ```sh
-$ curl -v http://localhost:3000/?page=1&lang=en&testType=120
+$ curl -v http://localhost:3000/getQuestions?page=1&lang=en&testType=120
 ```
 
 Both returns
@@ -34,7 +34,7 @@ Both returns
     "test":"Johnson-120-IPIP-NEO-PI-R",
     "link":"http://ipip.ori.org/30FacetNEO-PI-RItems.htm"
   },
-  "next":"https://localhost:3000/?page=2",
+  "next":"https://localhost:3000/getQuestions?page=2",
   "previous":false,
   "questions":[  
     {  
@@ -240,3 +240,5 @@ $ now https://github.com/maccyber/micro-bigfive-questions
 ## About
 
 Created by [zrrzzt](https://github.com/zrrrzzt) and [maccyber](https://github.com/maccyber)
+
+![alt text](https://robohash.org/micro-bigfive-questions.png "Robohash image of micro-bigfive-questions")

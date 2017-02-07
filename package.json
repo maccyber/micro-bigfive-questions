@@ -48,6 +48,7 @@
     "tap": "10.0.2"
   },
   "dependencies": {
+    "marked": "0.3.6",
     "micro": "7.0.0"
   },
   "now": {
