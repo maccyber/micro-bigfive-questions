@@ -7,7 +7,7 @@ micro webservice that returs bigfive questions and calculates score
 ## Questions
 
 ```sh
-$ curl -v http://localhost:3000 -d '{"page": 1, "lang": "en", "limit": 5, testType: '120' }'
+$ curl -v http://localhost:3000 -d '{"page": 1, "lang": "en", "limit": 5, testType: "120" }'
 ```
 
 ```sh
