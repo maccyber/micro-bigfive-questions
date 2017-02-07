@@ -7,11 +7,11 @@ micro webservice that returs bigfive questions and calculates score
 ## Questions
 
 ```sh
-$ curl -v http://localhost:3000 -d '{"page": 1, "lang": "en", "limit": 5}'
+$ curl -v http://localhost:3000 -d '{"page": 1, "lang": "en", "limit": 5, testType: '120' }'
 ```
 
 ```sh
-$ curl -v http://localhost:3000/?page=1&lang=en
+$ curl -v http://localhost:3000/?page=1&lang=en&testType=120
 ```
 
 Both returns
@@ -24,51 +24,153 @@ Both returns
   "percentDone":4,
   "page":1,
   "langCode":"en",
+  "languages":[  
+    "en",
+    "no"
+  ],
   "from":1,
   "to":6,
-  "choises":[  
-    {  
-      "val":1,
-      "text":"Very Inaccurate"
-    },
-    {  
-      "val":2,
-      "text":"Moderately Inaccurate"
-    },
-    {  
-      "val":3,
-      "text":"Neither Accurate Nor Inaccurate"
-    },
-    {  
-      "val":4,
-      "text":"Moderately Accurate"
-    },
-    {  
-      "val":5,
-      "text":"Very Accurate"
-    }
-  ],
-  "next":"http://bigfive-questions.now.sh/?page=2",
+  "testInfo":{  
+    "test":"Johnson-120-IPIP-NEO-PI-R",
+    "link":"http://ipip.ori.org/30FacetNEO-PI-RItems.htm"
+  },
+  "next":"https://localhost:3000/?page=2",
+  "previous":false,
   "questions":[  
     {  
       "id":1,
-      "text":"Worry about things"
+      "text":"Worry about things",
+      "facet":"N1",
+      "choises":[  
+        {  
+          "text":"Very Inacurate",
+          "value":1
+        },
+        {  
+          "text":"Moderately Inacurate",
+          "value":2
+        },
+        {  
+          "text":"Neither Accurate Nor Inaccurate",
+          "value":3
+        },
+        {  
+          "text":"Moderately Accurate",
+          "value":4
+        },
+        {  
+          "text":"Very Accurate",
+          "value":5
+        }
+      ]
     },
     {  
       "id":2,
-      "text":"Make friends easily"
+      "text":"Make friends easily",
+      "facet":"E1",
+      "choises":[  
+        {  
+          "text":"Very Inacurate",
+          "value":1
+        },
+        {  
+          "text":"Moderately Inacurate",
+          "value":2
+        },
+        {  
+          "text":"Neither Accurate Nor Inaccurate",
+          "value":3
+        },
+        {  
+          "text":"Moderately Accurate",
+          "value":4
+        },
+        {  
+          "text":"Very Accurate",
+          "value":5
+        }
+      ]
     },
     {  
       "id":3,
-      "text":"Have a vivid imagination"
+      "text":"Have a vivid imagination",
+      "facet":"O1",
+      "choises":[  
+        {  
+          "text":"Very Inacurate",
+          "value":1
+        },
+        {  
+          "text":"Moderately Inacurate",
+          "value":2
+        },
+        {  
+          "text":"Neither Accurate Nor Inaccurate",
+          "value":3
+        },
+        {  
+          "text":"Moderately Accurate",
+          "value":4
+        },
+        {  
+          "text":"Very Accurate",
+          "value":5
+        }
+      ]
     },
     {  
       "id":4,
-      "text":"Trust others"
+      "text":"Trust others",
+      "facet":"A1",
+      "choises":[  
+        {  
+          "text":"Very Inacurate",
+          "value":1
+        },
+        {  
+          "text":"Moderately Inacurate",
+          "value":2
+        },
+        {  
+          "text":"Neither Accurate Nor Inaccurate",
+          "value":3
+        },
+        {  
+          "text":"Moderately Accurate",
+          "value":4
+        },
+        {  
+          "text":"Very Accurate",
+          "value":5
+        }
+      ]
     },
     {  
       "id":5,
-      "text":"Complete tasks successfully"
+      "text":"Complete tasks successfully",
+      "facet":"C1",
+      "choises":[  
+        {  
+          "text":"Very Inacurate",
+          "value":1
+        },
+        {  
+          "text":"Moderately Inacurate",
+          "value":2
+        },
+        {  
+          "text":"Neither Accurate Nor Inaccurate",
+          "value":3
+        },
+        {  
+          "text":"Moderately Accurate",
+          "value":4
+        },
+        {  
+          "text":"Very Accurate",
+          "value":5
+        }
+      ]
     }
   ]
 }
@@ -113,6 +215,17 @@ Set ```lang``` to code
 | ---- | ---- |
 | en   | English |
 | no   | Norwegian |
+
+
+## Supported tests
+
+Set ```testType``` to code
+
+| Code | Name |
+| ---- | ---- |
+| 120  | Johnson-120-IPIP-NEO-PI-R |
+| 100  | - |
+| 50   | - |
 
 
 ## Deploy using [Now](https://zeit.co/now)
