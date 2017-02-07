@@ -5,7 +5,8 @@ const {plus, minus} = require('./choices')
 module.exports = [
   {
     test: '50-IPIP-NEO-PI-R',
-    link: 'http://ipip.ori.org/newNEODomainsKey.htm'
+    link: 'http://ipip.ori.org/newNEODomainsKey.htm',
+    info: 'test info...'
   },
   {
     text: 'Believe in the importance of art',
