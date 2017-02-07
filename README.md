@@ -32,132 +32,6 @@ Both returns
   "to":6,
   "testInfo":{  
     "test":"Johnson-120-IPIP-NEO-PI-R",
-    "link":"http://ipip.ori.org/30FacetNEO-PI-RItems.htm"
-  },
-  "next":"https://localhost:3000/getQuestions?page=2",
-  "previous":false,
-  "questions":[  
-    {  
-      "id":1,
-      "text":"Worry about things",
-      "facet":"N1",
-      "choises":[  
-        {  
-          "text":"Very Inacurate",
-          "value":1
-        },
-        {  
-          "text":"Moderately Inacurate",
-          "value":2
-        },
-        {  
-          "text":"Neither Accurate Nor Inaccurate",
-          "value":3
-        },
-        {  
-          "text":"Moderately Accurate",
-          "value":4
-        },
-        {  
-          "text":"Very Accurate",
-          "value":5
-        }
-      ]
-    },
-    {  
-      "id":2,
-      "text":"Make friends easily",
-      "facet":"E1",
-      "choises":[  
-        {  
-          "text":"Very Inacurate",
-          "value":1
-        },
-        {  
-          "text":"Moderately Inacurate",
-          "value":2
-        },
-        {  
-          "text":"Neither Accurate Nor Inaccurate",
-          "value":3
-        },
-        {  
-          "text":"Moderately Accurate",
-          "value":4
-        },
-        {  
-          "text":"Very Accurate",
-          "value":5
-        }
-      ]
-    },
-    {  
-      "id":3,
-      "text":"Have a vivid imagination",
-      "facet":"O1",
-      "choises":[  
-        {  
-          "text":"Very Inacurate",
-          "value":1
-        },
-        {  
-          "text":"Moderately Inacurate",
-          "value":2
-        },
-        {  
-          "text":"Neither Accurate Nor Inaccurate",
-          "value":3
-        },
-        {  
-          "text":"Moderately Accurate",
-          "value":4
-        },
-        {  
-          "text":"Very Accurate",
-          "value":5
-        }
-      ]
-    },
-    {  
-      "id":4,
-      "text":"Trust others",
-      "facet":"A1",
-      "choises":[  
-        {  
-          "text":"Very Inacurate",
-          "value":1
-        },
-        {  
-          "text":"Moderately Inacurate",
-          "value":2
-        },
-        {  
-          "text":"Neither Accurate Nor Inaccurate",
-          "value":3
-        },
-        {  
-          "text":"Moderately Accurate",
-          "value":4
-        },
-        {  
-          "text":"Very Accurate",
-          "value":5
-        }
-{  
-  "totalQuestions":120,
-  "limit":5,
-  "totalPages":24,
-  "percentDone":4,
-  "page":1,
-  "langCode":"en",
-  "languages":[  
-    "en",
-    "no"
-  ],
-  "from":1,
-  "to":6,
-  "testInfo":{  
-    "test":"Johnson-120-IPIP-NEO-PI-R",
     "link":"http://ipip.ori.org/30FacetNEO-PI-RItems.htm",
     "info":"test info ..."
   },
@@ -167,6 +41,7 @@ Both returns
     {  
       "id":1,
       "text":"Worry about things",
+      "domain":"N",
       "facet":"N1",
       "choises":[  
         {  
@@ -194,6 +69,7 @@ Both returns
     {  
       "id":2,
       "text":"Make friends easily",
+      "domain":"E",
       "facet":"E1",
       "choises":[  
         {  
@@ -221,6 +97,7 @@ Both returns
     {  
       "id":3,
       "text":"Have a vivid imagination",
+      "domain":"O",
       "facet":"O1",
       "choises":[  
         {  
@@ -248,6 +125,7 @@ Both returns
     {  
       "id":4,
       "text":"Trust others",
+      "domain":"A",
       "facet":"A1",
       "choises":[  
         {  
@@ -275,6 +153,7 @@ Both returns
     {  
       "id":5,
       "text":"Complete tasks successfully",
+      "domain":"C",
       "facet":"C1",
       "choises":[  
         {  
