@@ -18,6 +18,7 @@ module.exports = async (req, res) => {
       url: req.encrypted ? `https://${req.headers.host}` : `https://${req.headers.host}`,
       page: parseInt(data.page) || 1,
       langCode: data.lang || 'en',
+      testType: data.testType || '120',
       limit: parseInt(data.limit) || 5
     }
     result = getQuestions(opts)
