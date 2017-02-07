@@ -236,3 +236,7 @@ $ now https://github.com/maccyber/micro-bigfive-questions
 
 ## License
 [MIT](LICENSE)
+
+## About
+
+Created by [zrrzzt](https://github.com/zrrrzzt) and [maccyber](https://github.com/maccyber)
