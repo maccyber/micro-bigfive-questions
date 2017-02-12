@@ -4,45 +4,55 @@ module.exports = {
   plus: [
     {
       text: 'Very Inacurate',
-      value: 1
+      score: 1,
+      color: 1
     },
     {
       text: 'Moderately Inacurate',
-      value: 2
+      score: 2,
+      color: 2
     },
     {
       text: 'Neither Accurate Nor Inaccurate',
-      value: 3
+      score: 3,
+      color: 3
     },
     {
       text: 'Moderately Accurate',
-      value: 4
+      score: 4,
+      color: 4
     },
     {
       text: 'Very Accurate',
-      value: 5
+      score: 5,
+      color: 5
     }
   ],
   minus: [
     {
       text: 'Very Inacurate',
-      value: 5
+      score: 5,
+      color: 1
     },
     {
       text: 'Moderately Inacurate',
-      value: 4
+      score: 4,
+      color: 2
     },
     {
       text: 'Neither Accurate Nor Inaccurate',
-      value: 3
+      score: 3,
+      color: 3
     },
     {
       text: 'Moderately Accurate',
-      value: 2
+      score: 2,
+      color: 4
     },
     {
       text: 'Very Accurate',
-      value: 1
+      score: 1,
+      color: 5
     }
   ]
 }
