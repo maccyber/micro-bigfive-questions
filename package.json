@@ -42,14 +42,14 @@
     "url": "http://github.com/maccyber/micro-bigfive-questions/issues"
   },
   "devDependencies": {
-    "coveralls": "2.11.15",
+    "coveralls": "2.11.16",
     "nsp": "2.6.2",
     "standard": "8.6.0",
-    "tap": "10.0.2"
+    "tap": "10.1.0"
   },
   "dependencies": {
     "marked": "0.3.6",
-    "micro": "7.0.0"
+    "micro": "7.0.6"
   },
   "now": {
     "aliases": [
