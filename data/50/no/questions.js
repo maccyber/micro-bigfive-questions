@@ -9,32 +9,32 @@ module.exports = [
     info: 'test info...'
   },
   {
-    text: 'Tror på betydningen av kunst',
+    text: 'Synes kunst er viktig',
     choises: plus,
     domain: 'O'
   },
   {
-    text: 'Har en livlig fantasi',
+    text: 'Har livlig fantasi',
     choises: plus,
     domain: 'O'
   },
   {
-    text: 'Pleier å stemme på liberale politiske kandidater',
+    text: 'Pleier å stemme på liberale politikere',
     choises: plus,
     domain: 'O'
   },
   {
-    text: 'Fører samtalen til et høyere nivå',
+    text: 'Går dypere i samtaler',
     choises: plus,
     domain: 'O'
   },
   {
-    text: 'Liker å høre nye idèer',
+    text: 'Begeistret for nye ideer',
     choises: plus,
     domain: 'O'
   },
   {
-    text: 'Jeg er ikke interessert i nye idèer',
+    text: 'Er ikke interessert i abstrakte ideer',
     choises: minus,
     domain: 'O'
   },
@@ -54,7 +54,7 @@ module.exports = [
     domain: 'O'
   },
   {
-    text: 'Pleier å stemme på politikere som er konservative',
+    text: 'Pleier å stemme på konservative politikere',
     choises: minus,
     domain: 'O'
   },
@@ -69,12 +69,12 @@ module.exports = [
     domain: 'N'
   },
   {
-    text: 'Er ofte nede i følelsesmessige bølgedaler',
+    text: 'Føler meg ofte nede i en bølgedal',
     choises: plus,
     domain: 'N'
   },
   {
-    text: 'Har hyppige humørsvingninger',
+    text: 'Har ofte humørsvingninger',
     choises: plus,
     domain: 'N'
   },
@@ -84,22 +84,22 @@ module.exports = [
     domain: 'N'
   },
   {
-    text: 'Blir lett irritert',
+    text: 'Blir sjelden irritert',
     choises: minus,
     domain: 'N'
   },
   {
-    text: 'Seldom feel blue',
+    text: 'Føler meg sjelden nedstemt',
     choises: minus,
     domain: 'N'
   },
   {
-    text: 'Føler meg komfortabel med meg selv',
+    text: 'Føler meg vel i forhold til meg selv',
     choises: minus,
     domain: 'N'
   },
   {
-    text: 'Er ikke lett brydd av ting',
+    text: 'Føler ofte at ting ikke vedrører meg',
     choises: minus,
     domain: 'N'
   },
@@ -109,7 +109,7 @@ module.exports = [
     domain: 'N'
   },
   {
-    text: 'Føler meg komfortabel rundt mennesker',
+    text: 'Føler meg vel med mennesker rundt meg',
     choises: plus,
     domain: 'E'
   },
@@ -119,17 +119,17 @@ module.exports = [
     domain: 'E'
   },
   {
-    text: 'Er dyktig i å håndere sosiale situasjoner',
+    text: 'Er flink til å håndtere sosiale situasjoner',
     choises: plus,
     domain: 'E'
   },
   {
-    text: 'Am the life of the party',
+    text: 'Er midtpunkt i selskapet',
     choises: plus,
     domain: 'E'
   },
   {
-    text: 'Know how to captivate people',
+    text: 'Vet hvordan jeg skal fenge andre mennesker',
     choises: plus,
     domain: 'E'
   },
@@ -144,17 +144,17 @@ module.exports = [
     domain: 'E'
   },
   {
-    text: 'Would describe my experiences as somewhat dull',
+    text: 'Vil beskrive meg selv som litt kjedelig',
     choises: minus,
     domain: 'E'
   },
   {
-    text: "Don't like to draw attention to myself",
+    text: 'Liker ikke å få oppmerksomhet rettet mot meg',
     choises: minus,
     domain: 'E'
   },
   {
-    text: 'Snakker ikke mye',
+    text: 'Snakker ikke så mye',
     choises: minus,
     domain: 'E'
   },
@@ -164,22 +164,22 @@ module.exports = [
     domain: 'C'
   },
   {
-    text: 'Pay attention to details',
+    text: 'Er opptatt av detaljer',
     choises: plus,
     domain: 'C'
   },
   {
-    text: 'Get chores done right away',
+    text: 'Får viktige oppgaver fort unnagjort',
     choises: plus,
     domain: 'C'
   },
   {
-    text: 'Gjennomfører planene mine',
+    text: 'Realiserer planene mine',
     choises: plus,
     domain: 'C'
   },
   {
-    text: 'Lager planer og holder meg til dem',
+    text: 'Legger planer og holder meg til dem',
     choises: plus,
     domain: 'C'
   },
@@ -189,32 +189,32 @@ module.exports = [
     domain: 'C'
   },
   {
-    text: 'Find it difficult to get down to work',
+    text: 'Syns det er vanskelig å komme i gang med arbeid',
     choises: minus,
     domain: 'C'
   },
   {
-    text: 'Do just enough work to get by',
+    text: 'Gjør akkurat det jeg må av arbeid, verken mer eller mindre',
     choises: minus,
     domain: 'C'
   },
   {
-    text: "Don't see things through",
+    text: 'Følger ikke opp ting jeg setter i gang',
     choises: minus,
     domain: 'C'
   },
   {
-    text: 'Shirk my duties',
+    text: 'Følger ikke opp pliktene mine',
     choises: minus,
     domain: 'C'
   },
   {
-    text: 'Have a good word for everyone',
+    text: 'Har noe godt og pent å si til alle',
     choises: plus,
     domain: 'A'
   },
   {
-    text: 'Believe that others have good intentions',
+    text: 'Tror at alle har gode hensikter',
     choises: plus,
     domain: 'A'
   },
@@ -224,12 +224,12 @@ module.exports = [
     domain: 'A'
   },
   {
-    text: 'Aksepterer mennesker som de er',
+    text: 'Aksepterer folk for det de er',
     choises: plus,
     domain: 'A'
   },
   {
-    text: 'Make people feel at ease',
+    text: 'Får folk til å føle seg vel',
     choises: plus,
     domain: 'A'
   },
@@ -239,17 +239,17 @@ module.exports = [
     domain: 'A'
   },
   {
-    text: 'Cut others to pieces',
+    text: 'Bryter andre ned i fillebiter"',
     choises: minus,
     domain: 'A'
   },
   {
-    text: 'Suspect hidden motives in others',
+    text: 'Tror at andre har skjulte motiver',
     choises: minus,
     domain: 'A'
   },
   {
-    text: 'Get back at others',
+    text: 'Hevner meg på andre',
     choises: minus,
     domain: 'A'
   },
