@@ -39,144 +39,169 @@ Both returns
   "previous":false,
   "questions":[  
     {  
-      "id":1,
       "text":"Worry about things",
+      "choises":[  
+        {  
+          "text":"Very Inaccurate",
+          "score":1,
+          "color":1
+        },
+        {  
+          "text":"Moderately Inaccurate",
+          "score":2,
+          "color":2
+        },
+        {  
+          "text":"Neither Accurate Nor Inaccurate",
+          "score":3,
+          "color":3
+        },
+        {  
+          "text":"Moderately Accurate",
+          "score":4,
+          "color":4
+        },
+        {  
+          "text":"Very Accurate",
+          "score":5,
+          "color":5
+        }
+      ],
       "domain":"N",
-      "facet":"N1",
-      "choises":[  
-        {  
-          "text":"Very Inacurate",
-          "value":1
-        },
-        {  
-          "text":"Moderately Inacurate",
-          "value":2
-        },
-        {  
-          "text":"Neither Accurate Nor Inaccurate",
-          "value":3
-        },
-        {  
-          "text":"Moderately Accurate",
-          "value":4
-        },
-        {  
-          "text":"Very Accurate",
-          "value":5
-        }
-      ]
+      "facet":1,
+      "id":1
     },
     {  
-      "id":2,
       "text":"Make friends easily",
+      "choises":[  
+        {  
+          "text":"Very Inaccurate",
+          "score":1,
+          "color":1
+        },
+        {  
+          "text":"Moderately Inaccurate",
+          "score":2,
+          "color":2
+        },
+        {  
+          "text":"Neither Accurate Nor Inaccurate",
+          "score":3,
+          "color":3
+        },
+        {  
+          "text":"Moderately Accurate",
+          "score":4,
+          "color":4
+        },
+        {  
+          "text":"Very Accurate",
+          "score":5,
+          "color":5
+        }
+      ],
       "domain":"E",
-      "facet":"E1",
-      "choises":[  
-        {  
-          "text":"Very Inacurate",
-          "value":1
-        },
-        {  
-          "text":"Moderately Inacurate",
-          "value":2
-        },
-        {  
-          "text":"Neither Accurate Nor Inaccurate",
-          "value":3
-        },
-        {  
-          "text":"Moderately Accurate",
-          "value":4
-        },
-        {  
-          "text":"Very Accurate",
-          "value":5
-        }
-      ]
+      "facet":1,
+      "id":2
     },
     {  
-      "id":3,
       "text":"Have a vivid imagination",
+      "choises":[  
+        {  
+          "text":"Very Inaccurate",
+          "score":1,
+          "color":1
+        },
+        {  
+          "text":"Moderately Inaccurate",
+          "score":2,
+          "color":2
+        },
+        {  
+          "text":"Neither Accurate Nor Inaccurate",
+          "score":3,
+          "color":3
+        },
+        {  
+          "text":"Moderately Accurate",
+          "score":4,
+          "color":4
+        },
+        {  
+          "text":"Very Accurate",
+          "score":5,
+          "color":5
+        }
+      ],
       "domain":"O",
-      "facet":"O1",
-      "choises":[  
-        {  
-          "text":"Very Inacurate",
-          "value":1
-        },
-        {  
-          "text":"Moderately Inacurate",
-          "value":2
-        },
-        {  
-          "text":"Neither Accurate Nor Inaccurate",
-          "value":3
-        },
-        {  
-          "text":"Moderately Accurate",
-          "value":4
-        },
-        {  
-          "text":"Very Accurate",
-          "value":5
-        }
-      ]
+      "facet":1,
+      "id":3
     },
     {  
-      "id":4,
       "text":"Trust others",
-      "domain":"A",
-      "facet":"A1",
       "choises":[  
         {  
-          "text":"Very Inacurate",
-          "value":1
+          "text":"Very Inaccurate",
+          "score":1,
+          "color":1
         },
         {  
-          "text":"Moderately Inacurate",
-          "value":2
+          "text":"Moderately Inaccurate",
+          "score":2,
+          "color":2
         },
         {  
           "text":"Neither Accurate Nor Inaccurate",
-          "value":3
+          "score":3,
+          "color":3
         },
         {  
           "text":"Moderately Accurate",
-          "value":4
+          "score":4,
+          "color":4
         },
         {  
           "text":"Very Accurate",
-          "value":5
+          "score":5,
+          "color":5
         }
-      ]
+      ],
+      "domain":"A",
+      "facet":1,
+      "id":4
     },
     {  
-      "id":5,
       "text":"Complete tasks successfully",
-      "domain":"C",
-      "facet":"C1",
       "choises":[  
         {  
-          "text":"Very Inacurate",
-          "value":1
+          "text":"Very Inaccurate",
+          "score":1,
+          "color":1
         },
         {  
-          "text":"Moderately Inacurate",
-          "value":2
+          "text":"Moderately Inaccurate",
+          "score":2,
+          "color":2
         },
         {  
           "text":"Neither Accurate Nor Inaccurate",
-          "value":3
+          "score":3,
+          "color":3
         },
         {  
           "text":"Moderately Accurate",
-          "value":4
+          "score":4,
+          "color":4
         },
         {  
           "text":"Very Accurate",
-          "value":5
+          "score":5,
+          "color":5
         }
-      ]
+      ],
+      "domain":"C",
+      "facet":1,
+      "id":5
     }
   ]
 }
