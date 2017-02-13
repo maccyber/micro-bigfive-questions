@@ -3,12 +3,12 @@
 module.exports = {
   plus: [
     {
-      text: 'Very Inacurate',
+      text: 'Very Inaccurate',
       score: 1,
       color: 1
     },
     {
-      text: 'Moderately Inacurate',
+      text: 'Moderately Inaccurate',
       score: 2,
       color: 2
     },
@@ -30,12 +30,12 @@ module.exports = {
   ],
   minus: [
     {
-      text: 'Very Inacurate',
+      text: 'Very Inaccurate',
       score: 5,
       color: 1
     },
     {
-      text: 'Moderately Inacurate',
+      text: 'Moderately Inaccurate',
       score: 4,
       color: 2
     },

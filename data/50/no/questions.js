@@ -239,7 +239,7 @@ module.exports = [
     domain: 'A'
   },
   {
-    text: 'Bryter andre ned i fillebiter"',
+    text: 'Bryter andre ned i fillebiter',
     choises: minus,
     domain: 'A'
   },
