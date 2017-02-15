@@ -1,6 +1,6 @@
 # micro-bigfive-questions
 
-Example: https://bigfive-questions.now.sh/
+Example: https://questions.bigfive.maccyber.io/
 
 micro webservice that returs bigfive questions and calculates score
 

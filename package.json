@@ -18,7 +18,7 @@
   ],
   "main": "index.js",
   "engines": {
-    "node": ">=7.4.0"
+    "node": ">=7.5.0"
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
@@ -52,9 +52,7 @@
     "micro": "7.0.6"
   },
   "now": {
-    "aliases": [
-      "bigfive-questions.now.sh"
-    ],
+    "alias": "questions.bigfive.maccyber.io",
     "env": {
       "NODE_ENV": "production"
     }
