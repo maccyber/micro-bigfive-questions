@@ -55,6 +55,7 @@
     "alias": "questions.bigfive.maccyber.io",
     "env": {
       "NODE_ENV": "production"
-    }
+    },
+    "type": "npm"
   }
 }
