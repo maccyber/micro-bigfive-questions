@@ -243,10 +243,12 @@ $ now https://github.com/maccyber/micro-bigfive-questions
 ```
 
 ## License
+
 [MIT](LICENSE)
 
 ## About
 
 Created by [zrrzzt](https://github.com/zrrrzzt) and [maccyber](https://github.com/maccyber)
 
-![alt text](https://robohash.org/micro-bigfive-questions.png "Robohash image of micro-bigfive-questions")
+![alt text](https://robots.kebabstudios.party/zrrrzzt.png "Robohash image of zrrrzzt") 
+![alt text](https://robots.kebabstudios.party/maccyber.png "Robohash image of maccyber")
