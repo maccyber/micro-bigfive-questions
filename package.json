@@ -27,7 +27,7 @@
     "coveralls": "tap --cov --coverage-report=lcov test/**/*.js && cat coverage/lcov.info | coveralls",
     "setup": "npm install",
     "standard-fix": "standard --fix",
-    "start": "micro -p 3000"
+    "start": "micro"
   },
   "keywords": [
     "microservice",
@@ -36,10 +36,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/maccyber/micro-bigfive-questions.git"
+    "url": "https://github.com/maccyber/micro-bigfive-questions.git"
   },
   "bugs": {
-    "url": "http://github.com/maccyber/micro-bigfive-questions/issues"
+    "url": "https://github.com/maccyber/micro-bigfive-questions/issues"
   },
   "devDependencies": {
     "coveralls": "2.11.16",
@@ -55,6 +55,7 @@
     "alias": "questions.bigfive.maccyber.io",
     "env": {
       "NODE_ENV": "production"
-    }
+    },
+    "type": "npm"
   }
 }
