@@ -8,17 +8,41 @@ Example: https://questions.bigfive.maccyber.io/
 
 micro webservice that returs bigfive questions and calculates score
 
+## Tests
+
+### Request
+
+```sh
+$ curl -v http://localhost:3000/getTests
+```
+
+### Result
+
+```JavaScript
+[
+  "100",
+  "120",
+  "20",
+  "50",
+  "hexaco"
+]
+```
+
 ## Questions
+
+### Request (POST)
 
 ```sh
 $ curl -v http://localhost:3000/getQuestions -d '{"page": 1, "lang": "en", "limit": 5, testType: "120" }'
 ```
 
+### Request (url params)
+
 ```sh
 $ curl -v http://localhost:3000/getQuestions?page=1&lang=en&testType=120
 ```
 
-Both returns
+### Result
 
 ```JavaScript
 {  
@@ -234,7 +258,8 @@ Set ```testType``` to code
 | 120  | Johnson-120-IPIP-NEO-PI-R |
 | 100  | - |
 | 50   | - |
-
+| 20   | - |
+| hexaco | - |
 
 ## Deploy using [Now](https://zeit.co/now)
 

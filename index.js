@@ -5,6 +5,7 @@ const marked = require('marked')
 const { parse } = require('url')
 const { json, send } = require('micro')
 const getQuestions = require('./lib/get-questions')
+const getTests = require('./lib/get-tests')
 
 module.exports = async (req, res) => {
   const {query, pathname} = await parse(req.url, true)
@@ -19,6 +20,8 @@ module.exports = async (req, res) => {
       limit: parseInt(data.limit) || 5
     }
     result = getQuestions(opts)
+  } else if (pathname === '/getTests') {
+    result = getTests({})
   } else {
     const readme = readFileSync('./README.md', 'utf-8')
     result = marked(readme)

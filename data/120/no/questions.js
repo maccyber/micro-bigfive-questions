@@ -297,7 +297,7 @@ module.exports = [
     facet: 4
   },
   {
-    text: 'Skjeller ut folke',
+    text: 'Skjeller ut folk',
     choises: minus,
     domain: 'A',
     facet: 4
@@ -681,7 +681,7 @@ module.exports = [
     facet: 5
   },
   {
-    text: 'Er ikke interesert i teoretiske diskusjoner',
+    text: 'Er ikke interessert i teoretiske diskusjoner',
     choises: minus,
     domain: 'O',
     facet: 5
