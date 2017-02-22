@@ -1,10 +1,12 @@
 'use strict'
 
-const tap = require('tap')
+const test = require('ava')
 const pkg = require('../../package.json')
 const dependencies = pkg.devDependencies || {}
 
 Object.keys(dependencies).forEach((dependency) => {
-  const module = require(dependency)
-  tap.ok(module, `${dependency} loads ok`)
+  test(`${dependency} loads ok`, t => {
+    const module = require(dependency)
+    t.truthy(module)
+  })
 })

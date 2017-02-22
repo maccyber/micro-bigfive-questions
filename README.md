@@ -5,7 +5,7 @@
 
 Example: https://questions.bigfive.maccyber.io/
 
-micro webservice that returs bigfive questions and calculates score
+[micro](https://github.com/zeit/micro) webservice that returns bigfive questions
 
 ## Tests
 
@@ -265,6 +265,13 @@ Set ```testType``` to code
 ```sh
 $ now https://github.com/maccyber/micro-bigfive-questions
 ```
+
+## Related
+- [bigfive-web](https://github.com/maccyber/bigfive-web) Web frontend for bigfive tests
+- [micro-bigfive-evaluator](https://github.com/maccyber/micro-bigfive-evaluator) Webservice that evaluates bigfive questions
+- [micro-bigfive-generator](https://github.com/maccyber/micro-bigfive-generator) Webservice that generates and saves results to bigfive-web
+- [micro-bigfive-results](https://github.com/maccyber/micro-bigfive-results) Webservice that returns bigfive informative test results
+- [micro-bigfive-save](https://github.com/maccyber/micro-bigfive-save) Webservice that stores bigfive answers
 
 ## License
 
