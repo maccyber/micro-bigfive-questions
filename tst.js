@@ -13,7 +13,6 @@ const q = getQuestions(
   }
 )
 
-console.log(q)
 const e = shuffle(q.questions.slice(0))
 
 const r = e.map(d => {
@@ -21,7 +20,5 @@ const r = e.map(d => {
     return d
   }
 )
-
-console.log(r)
 
 fs.writeFileSync('file.js', util.inspect(r, { depth: 10, maxArrayLength: 300 }))
