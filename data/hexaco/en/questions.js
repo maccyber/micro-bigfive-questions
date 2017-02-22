@@ -250,6 +250,12 @@ module.exports = [
     facet: 'Mode'
   },
   {
+    text: 'Am a physical coward',
+    choises: plus,
+    domain: 'E',
+    facet: 'Fear'
+  },
+  {
     text: 'Begin to panic when there is danger',
     choises: plus,
     domain: 'E',
