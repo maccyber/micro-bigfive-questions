@@ -352,12 +352,6 @@ module.exports = [
     facet: 'Anxi'
   },
   {
-    text: '',
-    choises: minus,
-    domain: 'E',
-    facet: 'Anxi'
-  },
-  {
     text: 'Remain calm under pressure',
     choises: minus,
     domain: 'E',
@@ -401,12 +395,6 @@ module.exports = [
   },
   {
     text: 'Show my sadness',
-    choises: plus,
-    domain: 'E',
-    facet: 'Dep'
-  },
-  {
-    text: '',
     choises: plus,
     domain: 'E',
     facet: 'Dep'
