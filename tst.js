@@ -16,9 +16,9 @@ const q = getQuestions(
 const e = shuffle(q.questions.slice(0))
 
 const r = e.map(d => {
-    delete d.id
-    return d
-  }
+  delete d.id
+  return d
+}
 )
 
 fs.writeFileSync('file.js', util.inspect(r, { depth: 10, maxArrayLength: 300 }))

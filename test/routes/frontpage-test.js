@@ -1,6 +1,5 @@
 'use strict'
 
-import 'async-to-gen/register'
 const test = require('ava')
 const listen = require('test-listen')
 const axios = require('axios')
