@@ -5,7 +5,7 @@ const listen = require('test-listen')
 const axios = require('axios')
 const micro = require('micro')
 const srv = require('../../index')
-const expectedTests = ['100', '120', '20', '50', 'hexaco']
+const expectedTests = ['100', '120', '20', '50', 'asrs', 'hexaco']
 
 const getUrl = fn => {
   const srv = micro(fn)

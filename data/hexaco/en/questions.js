@@ -6,8 +6,9 @@ module.exports = [
   {
     test: "Lee and Ashton's (2004) HEXACO-PI",
     link: 'http://ipip.ori.org/newHEXACO_PI_key.htm',
-    testType: 'HEXACO-PI',
-    info: 'test info...'
+    testType: 'personality',
+    info: 'test info...',
+    shuffle: true
   },
   {
     text: "Don't pretend to be more than I am",
