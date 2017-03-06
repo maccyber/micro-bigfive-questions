@@ -462,7 +462,7 @@ module.exports = [
     text: 'Only feel comfortable with friends',
     choises: plus,
     domain: 'N',
-    facet: 3
+    facet: 4
   },
   {
     text: 'Do a lot in my spare time',
