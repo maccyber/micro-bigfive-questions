@@ -242,10 +242,10 @@ See [micro-bigfive-evaluator](https://github.com/maccyber/micro-bigfive-evaluato
 
 Set ```lang``` to code
 
-| Code | Name |
-| ---- | ---- |
-| en   | English |
-| no   | Norwegian |
+| Code | Name      | Translator |
+| ---- | --------- | ---------- |
+| en   | English   |            |
+| no   | Norwegian | Eli Huseby |
 
 
 ## Supported tests
