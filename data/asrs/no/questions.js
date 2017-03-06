@@ -6,7 +6,7 @@ module.exports = [
   {
     test: 'Adult Self-Report Scale (ASRS) Symptom Checklist',
     link: 'http://www.mentalhealthprofessionalsinc.com/Forms/Adult_ADHD_Self-Report_Scale_(ASRS-v1.1).pdf',
-    info: 'test info ...',
+    info: 'Adult Self-Report Scale (ASRS) Symptom Checklist is a ...',
     average: 2
   },
   {
