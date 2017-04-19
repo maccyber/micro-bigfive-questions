@@ -246,7 +246,7 @@ Set ```lang``` to code
 | ---- | --------- | ---------- |
 | en   | English   |            |
 | no   | Norwegian | Eli Huseby |
-
+| es   | Spanish   | nieled     |
 
 ## Supported tests
 
