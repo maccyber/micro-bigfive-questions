@@ -149,12 +149,12 @@ module.exports = [
     domain: 'E'
   },
   {
-    text: "No me gusta ser el centro de atención",
+    text: 'No me gusta ser el centro de atención',
     choises: minus,
     domain: 'E'
   },
   {
-    text: "No hablo mucho",
+    text: 'No hablo mucho',
     choises: minus,
     domain: 'E'
   },
@@ -199,7 +199,7 @@ module.exports = [
     domain: 'C'
   },
   {
-    text: "No veo las cosas detenidamente",
+    text: 'No veo las cosas detenidamente',
     choises: minus,
     domain: 'C'
   },
