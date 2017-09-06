@@ -1,15 +1,8 @@
-'use strict'
-
 const {plus, minus} = require('./choices')
+const info = require('../index')
 
 module.exports = [
-  {
-    test: "Lee and Ashton's (2004) HEXACO-PI",
-    link: 'http://ipip.ori.org/newHEXACO_PI_key.htm',
-    testType: 'personality',
-    info: 'test info...',
-    shuffle: true
-  },
+  info,
   {
     text: "Don't pretend to be more than I am",
     choises: plus,

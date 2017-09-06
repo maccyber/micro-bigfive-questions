@@ -1,13 +1,8 @@
-'use strict'
-
 const {plus, minus} = require('./choices')
+const info = require('../index')
 
 module.exports = [
-  {
-    test: 'Costa-McCrae-30-facet-IPIP-NEO-PI-R',
-    link: 'http://ipip.ori.org/newNEOFacetsKey.htm',
-    info: 'test info ...'
-  },
+  info,
   {
     text: 'Worry about things',
     choises: plus,

@@ -1,7 +1,7 @@
 {
   "name": "micro-bigfive-questions",
   "description": "micro webservice that serves bigfive questions",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "license": "MIT",
   "private": true,
   "author": {
@@ -26,8 +26,9 @@
     "coverage": "nyc ava",
     "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
     "setup": "npm install",
-    "standard-fix": "standard --fix",
-    "start": "micro"
+    "dev": "micro-dev -H localhost",
+    "start": "micro",
+    "now-deploy": "npm test && now --npm && now alias"
   },
   "keywords": [
     "microservice",
@@ -42,21 +43,21 @@
     "url": "https://github.com/maccyber/micro-bigfive-questions/issues"
   },
   "devDependencies": {
-    "ava": "0.19.1",
+    "ava": "0.22.0",
     "axios": "0.16.2",
     "coveralls": "2.13.1",
-    "nsp": "2.6.3",
-    "nyc": "11.0.2",
-    "standard": "10.0.2",
-    "test-listen": "1.0.2"
+    "nsp": "2.8.0",
+    "nyc": "11.2.1",
+    "standard": "10.0.3",
+    "test-listen": "1.0.2",
+    "micro-dev": "1.2.2"
   },
   "dependencies": {
-    "knuth-shuffle": "1.0.1",
     "marked": "0.3.6",
-    "micro": "7.3.3"
+    "micro": "8.0.4"
   },
   "now": {
-    "alias": "questions.bigfive.maccyber.io",
+    "alias": "questions.bigfive.world",
     "env": {
       "NODE_ENV": "production"
     },

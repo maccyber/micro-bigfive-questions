@@ -1,0 +1,65 @@
+[
+  {
+    "active": true,
+    "default": false,
+    "name": "100-IPIP-NEO-PI-R",
+    "link": "http://ipip.ori.org/newNEODomainsKey.htm",
+    "info": "Costa and McCrae's NEO-PI-R (100 questions)",
+    "shuffle": true,
+    "id": "100"
+  },
+  {
+    "active": true,
+    "default": true,
+    "name": "Johnson-120-IPIP-NEO-PI-R",
+    "link": "http://ipip.ori.org/30FacetNEO-PI-RItems.htm",
+    "info": "(Recommended) 120 questions (Johnson's IPIP NEO-PI-R)",
+    "shuffle": false,
+    "id": "120"
+  },
+  {
+    "active": true,
+    "default": false,
+    "name": "Mini-IPIP",
+    "link": "http://ipip.ori.org/MiniIPIPKey.htm",
+    "info": "Mini-IPIP 5-factors (20 questions)",
+    "shuffle": true,
+    "id": "20"
+  },
+  {
+    "active": false,
+    "default": false,
+    "name": "Costa and McCrae's NEO-PI-R",
+    "link": "http://ipip.ori.org/newNEOFacetsKey.htm",
+    "info": "Costa and McCrae's NEO-PI-R (300 questions) (EXPERIMENTAL)",
+    "shuffle": true,
+    "id": "300"
+  },
+  {
+    "active": true,
+    "default": false,
+    "name": "50-IPIP-NEO-PI-R",
+    "link": "http://ipip.ori.org/newNEODomainsKey.htm",
+    "info": "Costa and McCrae's NEO-PI-R (50 questions)",
+    "shuffle": true,
+    "id": "50"
+  },
+  {
+    "active": false,
+    "default": false,
+    "name": "Adult Self-Report Scale (ASRS) Symptom Checklist",
+    "link": "http://www.mentalhealthprofessionalsinc.com/Forms/Adult_ADHD_Self-Report_Scale_(ASRS-v1.1).pdf",
+    "info": "Adult Self-Report Scale (ASRS) Symptom Checklist (18 questions)",
+    "shuffle": true,
+    "id": "asrs"
+  },
+  {
+    "active": false,
+    "default": false,
+    "name": "Lee and Ashton's (2004) HEXACO-PI",
+    "link": "http://ipip.ori.org/newHEXACO_PI_key.htm",
+    "info": "Lee and Ashton's HEXACO-PI (240 questions) (EXPERIMENTAL)",
+    "shuffle": true,
+    "id": "hexaco"
+  }
+]

@@ -1,13 +1,8 @@
-'use strict'
-
 const {plus, minus} = require('./choices')
+const info = require('../index')
 
 module.exports = [
-  {
-    test: 'Johnson-120-IPIP-NEO-PI-R',
-    link: 'http://ipip.ori.org/30FacetNEO-PI-RItems.htm',
-    info: 'test info ...'
-  },
+  info,
   {
     text: 'Worry about things',
     choises: plus,

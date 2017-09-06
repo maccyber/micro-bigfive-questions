@@ -1,5 +1,3 @@
-'use strict'
-
 const test = require('ava')
 const listen = require('test-listen')
 const axios = require('axios')

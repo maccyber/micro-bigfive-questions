@@ -1,14 +1,8 @@
-'use strict'
-
 const scale = require('./choices')
+const info = require('../index')
 
 module.exports = [
-  {
-    test: 'Adult Self-Report Scale (ASRS) Symptom Checklist',
-    link: 'http://www.mentalhealthprofessionalsinc.com/Forms/Adult_ADHD_Self-Report_Scale_(ASRS-v1.1).pdf',
-    info: 'Adult Self-Report Scale (ASRS) Symptom Checklist is a ...',
-    average: 2
-  },
+  info,
   {
     text: 'How often do you make careless mistakes when you have to work on a boring or difficult project?',
     choises: scale,

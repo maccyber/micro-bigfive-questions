@@ -1,13 +1,8 @@
-'use strict'
-
 const {plus, minus} = require('./choices')
+const info = require('../index')
 
 module.exports = [
-  {
-    test: 'Mini-IPIP',
-    link: 'http://ipip.ori.org/MiniIPIPKey.htm',
-    info: 'test info ...'
-  },
+  info,
   {
     text: 'Är den som håller igång på ett party',
     choises: plus,

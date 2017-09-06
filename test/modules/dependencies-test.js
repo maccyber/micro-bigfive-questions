@@ -1,5 +1,3 @@
-'use strict'
-
 const test = require('ava')
 const pkg = require('../../package.json')
 const dependencies = pkg.dependencies || {}

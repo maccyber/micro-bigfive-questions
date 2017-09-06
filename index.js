@@ -1,5 +1,3 @@
-'use strict'
-
 const readFileSync = require('fs').readFileSync
 const marked = require('marked')
 const { parse } = require('url')
@@ -11,16 +9,16 @@ module.exports = async (req, res) => {
   const {query, pathname} = await parse(req.url, true)
   const data = req.method === 'POST' ? await json(req) : query
   let result = {}
-  if (pathname === '/getQuestions') {
+  if (pathname === '/questions') {
     const opts = {
       url: req.encrypted ? `https://${req.headers.host}/getQuestions` : `https://${req.headers.host}/getQuestions`,
       page: parseInt(data.page) || 1,
-      langCode: data.lang || 'en',
+      lang: data.lang || 'en',
       testType: data.testType || '120',
       limit: parseInt(data.limit) || 5
     }
     result = getQuestions(opts)
-  } else if (pathname === '/getTests') {
+  } else if (pathname === '/tests') {
     result = getTests({})
   } else {
     const readme = readFileSync('./README.md', 'utf-8')

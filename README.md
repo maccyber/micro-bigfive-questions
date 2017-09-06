@@ -3,7 +3,7 @@
 
 # micro-bigfive-questions
 
-Example: https://questions.bigfive.maccyber.io/
+Example: https://questions.bigfive.world
 
 [micro](https://github.com/zeit/micro) webservice that returns bigfive questions
 
@@ -12,18 +12,69 @@ Example: https://questions.bigfive.maccyber.io/
 ### Request
 
 ```sh
-$ curl -v http://localhost:3000/getTests
+$ curl -v http://localhost:3000/tests
 ```
 
 ### Result
 
 ```JavaScript
 [
-  "100",
-  "120",
-  "20",
-  "50",
-  "hexaco"
+  {
+    "active": true,
+    "default": false,
+    "name": "100-IPIP-NEO-PI-R",
+    "link": "http://ipip.ori.org/newNEODomainsKey.htm",
+    "info": "Costa and McCrae's NEO-PI-R (100 questions)",
+    "shuffle": true
+  },
+  {
+    "active": true,
+    "default": true,
+    "name": "Johnson-120-IPIP-NEO-PI-R",
+    "link": "http://ipip.ori.org/30FacetNEO-PI-RItems.htm",
+    "info": "(Recommended) 120 questions (Johnson's IPIP NEO-PI-R)",
+    "shuffle": false
+  },
+  {
+    "active": true,
+    "default": false,
+    "name": "Mini-IPIP",
+    "link": "http://ipip.ori.org/MiniIPIPKey.htm",
+    "info": "Mini-IPIP 5-factors (20 questions)",
+    "shuffle": true
+  },
+  {
+    "active": false,
+    "default": false,
+    "name": "Costa and McCrae's NEO-PI-R",
+    "link": "http://ipip.ori.org/newNEOFacetsKey.htm",
+    "info": "Costa and McCrae's NEO-PI-R (300 questions) (EXPERIMENTAL)",
+    "shuffle": true
+  },
+  {
+    "active": true,
+    "default": false,
+    "name": "50-IPIP-NEO-PI-R",
+    "link": "http://ipip.ori.org/newNEODomainsKey.htm",
+    "info": "Costa and McCrae's NEO-PI-R (50 questions)",
+    "shuffle": true
+  },
+  {
+    "active": false,
+    "default": false,
+    "name": "Adult Self-Report Scale (ASRS) Symptom Checklist",
+    "link": "http://www.mentalhealthprofessionalsinc.com/Forms/Adult_ADHD_Self-Report_Scale_(ASRS-v1.1).pdf",
+    "info": "Adult Self-Report Scale (ASRS) Symptom Checklist (18 questions)",
+    "shuffle": true
+  },
+  {
+    "active": false,
+    "default": false,
+    "name": "Lee and Ashton's (2004) HEXACO-PI",
+    "link": "http://ipip.ori.org/newHEXACO_PI_key.htm",
+    "info": "Lee and Ashton's HEXACO-PI (240 questions) (EXPERIMENTAL)",
+    "shuffle": true
+  }
 ]
 ```
 
@@ -32,203 +83,72 @@ $ curl -v http://localhost:3000/getTests
 ### Request (POST)
 
 ```sh
-$ curl -v http://localhost:3000/getQuestions -d '{"page": 1, "lang": "en", "limit": 5, testType: "120" }'
+$ curl -v http://localhost:3000/questions -d '{"lang": "en", testType: "120" }'
 ```
 
 ### Request (url params)
 
 ```sh
-$ curl -v http://localhost:3000/getQuestions?page=1&lang=en&testType=120
+$ curl -v http://localhost:3000/questions?lang=en&testType=120
 ```
 
 ### Result
 
 ```JavaScript
-{  
-  "totalQuestions":120,
-  "limit":5,
-  "totalPages":24,
-  "percentDone":4,
-  "page":1,
-  "langCode":"en",
-  "languages":[  
-    "en",
-    "no"
-  ],
-  "from":1,
-  "to":6,
-  "testInfo":{  
-    "test":"Johnson-120-IPIP-NEO-PI-R",
-    "link":"http://ipip.ori.org/30FacetNEO-PI-RItems.htm",
-    "info":"test info ..."
+{
+  "info": {
+    "active": true,
+    "default": true,
+    "name": "Johnson-120-IPIP-NEO-PI-R",
+    "link": "http://ipip.ori.org/30FacetNEO-PI-RItems.htm",
+    "info": "(Recommended) 120 questions (Johnson's IPIP NEO-PI-R)",
+    "shuffle": false,
+    "totalQuestions": 120,
+    "lang": "en",
+    "scoreMax": 5,
+    "scoreMin": 1,
+    "domains": 5,
+    "facets": 30,
+    "id": "120",
+    "languages": [
+      "en",
+      "es",
+      "no"
+    ]
   },
-  "next":"https://localhost:3000/getQuestions?page=2",
-  "previous":false,
-  "questions":[  
-    {  
-      "text":"Worry about things",
-      "choises":[  
-        {  
-          "text":"Very Inaccurate",
-          "score":1,
-          "color":1
+  "questions": [
+    {
+      "text": "Worry about things",
+      "choises": [
+        {
+          "text": "Very Inaccurate",
+          "score": 1,
+          "color": 1
         },
-        {  
-          "text":"Moderately Inaccurate",
-          "score":2,
-          "color":2
+        {
+          "text": "Moderately Inaccurate",
+          "score": 2,
+          "color": 2
         },
-        {  
-          "text":"Neither Accurate Nor Inaccurate",
-          "score":3,
-          "color":3
+        {
+          "text": "Neither Accurate Nor Inaccurate",
+          "score": 3,
+          "color": 3
         },
-        {  
-          "text":"Moderately Accurate",
-          "score":4,
-          "color":4
+        {
+          "text": "Moderately Accurate",
+          "score": 4,
+          "color": 4
         },
-        {  
-          "text":"Very Accurate",
-          "score":5,
-          "color":5
+        {
+          "text": "Very Accurate",
+          "score": 5,
+          "color": 5
         }
       ],
-      "domain":"N",
-      "facet":1,
-      "id":1
-    },
-    {  
-      "text":"Make friends easily",
-      "choises":[  
-        {  
-          "text":"Very Inaccurate",
-          "score":1,
-          "color":1
-        },
-        {  
-          "text":"Moderately Inaccurate",
-          "score":2,
-          "color":2
-        },
-        {  
-          "text":"Neither Accurate Nor Inaccurate",
-          "score":3,
-          "color":3
-        },
-        {  
-          "text":"Moderately Accurate",
-          "score":4,
-          "color":4
-        },
-        {  
-          "text":"Very Accurate",
-          "score":5,
-          "color":5
-        }
-      ],
-      "domain":"E",
-      "facet":1,
-      "id":2
-    },
-    {  
-      "text":"Have a vivid imagination",
-      "choises":[  
-        {  
-          "text":"Very Inaccurate",
-          "score":1,
-          "color":1
-        },
-        {  
-          "text":"Moderately Inaccurate",
-          "score":2,
-          "color":2
-        },
-        {  
-          "text":"Neither Accurate Nor Inaccurate",
-          "score":3,
-          "color":3
-        },
-        {  
-          "text":"Moderately Accurate",
-          "score":4,
-          "color":4
-        },
-        {  
-          "text":"Very Accurate",
-          "score":5,
-          "color":5
-        }
-      ],
-      "domain":"O",
-      "facet":1,
-      "id":3
-    },
-    {  
-      "text":"Trust others",
-      "choises":[  
-        {  
-          "text":"Very Inaccurate",
-          "score":1,
-          "color":1
-        },
-        {  
-          "text":"Moderately Inaccurate",
-          "score":2,
-          "color":2
-        },
-        {  
-          "text":"Neither Accurate Nor Inaccurate",
-          "score":3,
-          "color":3
-        },
-        {  
-          "text":"Moderately Accurate",
-          "score":4,
-          "color":4
-        },
-        {  
-          "text":"Very Accurate",
-          "score":5,
-          "color":5
-        }
-      ],
-      "domain":"A",
-      "facet":1,
-      "id":4
-    },
-    {  
-      "text":"Complete tasks successfully",
-      "choises":[  
-        {  
-          "text":"Very Inaccurate",
-          "score":1,
-          "color":1
-        },
-        {  
-          "text":"Moderately Inaccurate",
-          "score":2,
-          "color":2
-        },
-        {  
-          "text":"Neither Accurate Nor Inaccurate",
-          "score":3,
-          "color":3
-        },
-        {  
-          "text":"Moderately Accurate",
-          "score":4,
-          "color":4
-        },
-        {  
-          "text":"Very Accurate",
-          "score":5,
-          "color":5
-        }
-      ],
-      "domain":"C",
-      "facet":1,
-      "id":5
+      "domain": "N",
+      "facet": 1,
+      "id": 1
     }
   ]
 }
@@ -254,6 +174,7 @@ Set ```testType``` to code
 
 | Code | Name |
 | ---- | ---- |
+| 300 | - |
 | 120  | Johnson-120-IPIP-NEO-PI-R |
 | 100  | - |
 | 50   | - |
