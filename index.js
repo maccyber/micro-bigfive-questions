@@ -11,15 +11,15 @@ module.exports = async (req, res) => {
   let result = {}
   if (pathname === '/questions') {
     const opts = {
-      url: req.encrypted ? `https://${req.headers.host}/getQuestions` : `https://${req.headers.host}/getQuestions`,
-      page: parseInt(data.page) || 1,
       lang: data.lang || 'en',
-      testType: data.testType || '120',
-      limit: parseInt(data.limit) || 5
+      testType: data.testType || '120'
     }
     result = getQuestions(opts)
   } else if (pathname === '/tests') {
-    result = getTests({})
+    const opts = {
+      url: req.connection.encrypted ? `https://${req.headers.host}/questions` : `http://${req.headers.host}/questions`
+    }
+    result = getTests(opts)
   } else {
     const readme = readFileSync('./README.md', 'utf-8')
     result = marked(readme)
