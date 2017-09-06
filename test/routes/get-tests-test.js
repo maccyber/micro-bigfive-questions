@@ -13,5 +13,9 @@ const getUrl = fn => {
 test('it returns expected tests at /tests', async t => {
   const url = await getUrl(srv)
   const result = await axios.get(`${url}/tests`)
-  t.deepEqual(result.data, expectedTests, 'tests ok')
+  const data = result.data.map(res => {
+    res.url = res.url.replace(url, 'http://localhost:3000')
+    return res
+  })
+  t.deepEqual(data, expectedTests, 'tests ok')
 })

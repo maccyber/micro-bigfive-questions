@@ -6,7 +6,8 @@
     "link": "http://ipip.ori.org/newNEODomainsKey.htm",
     "info": "Costa and McCrae's NEO-PI-R (100 questions)",
     "shuffle": true,
-    "id": "100"
+    "id": "100",
+    "url": "http://localhost:3000/questions?testType=100"
   },
   {
     "active": true,
@@ -15,7 +16,8 @@
     "link": "http://ipip.ori.org/30FacetNEO-PI-RItems.htm",
     "info": "(Recommended) 120 questions (Johnson's IPIP NEO-PI-R)",
     "shuffle": false,
-    "id": "120"
+    "id": "120",
+    "url": "http://localhost:3000/questions?testType=120"
   },
   {
     "active": true,
@@ -24,7 +26,8 @@
     "link": "http://ipip.ori.org/MiniIPIPKey.htm",
     "info": "Mini-IPIP 5-factors (20 questions)",
     "shuffle": true,
-    "id": "20"
+    "id": "20",
+    "url": "http://localhost:3000/questions?testType=20"
   },
   {
     "active": false,
@@ -33,7 +36,8 @@
     "link": "http://ipip.ori.org/newNEOFacetsKey.htm",
     "info": "Costa and McCrae's NEO-PI-R (300 questions) (EXPERIMENTAL)",
     "shuffle": true,
-    "id": "300"
+    "id": "300",
+    "url": "http://localhost:3000/questions?testType=300"
   },
   {
     "active": true,
@@ -42,7 +46,8 @@
     "link": "http://ipip.ori.org/newNEODomainsKey.htm",
     "info": "Costa and McCrae's NEO-PI-R (50 questions)",
     "shuffle": true,
-    "id": "50"
+    "id": "50",
+    "url": "http://localhost:3000/questions?testType=50"
   },
   {
     "active": false,
@@ -51,7 +56,8 @@
     "link": "http://www.mentalhealthprofessionalsinc.com/Forms/Adult_ADHD_Self-Report_Scale_(ASRS-v1.1).pdf",
     "info": "Adult Self-Report Scale (ASRS) Symptom Checklist (18 questions)",
     "shuffle": true,
-    "id": "asrs"
+    "id": "asrs",
+    "url": "http://localhost:3000/questions?testType=asrs"
   },
   {
     "active": false,
@@ -60,6 +66,7 @@
     "link": "http://ipip.ori.org/newHEXACO_PI_key.htm",
     "info": "Lee and Ashton's HEXACO-PI (240 questions) (EXPERIMENTAL)",
     "shuffle": true,
-    "id": "hexaco"
+    "id": "hexaco",
+    "url": "http://localhost:3000/questions?testType=hexaco"
   }
 ]
