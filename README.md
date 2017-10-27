@@ -165,8 +165,8 @@ Set ```lang``` to code
 | Code | Name      | Translator |
 | ---- | --------- | ---------- |
 | en   | English   |            |
+| es   | Spanish   | [Eduardo Calle](github.com/nieled) |
 | no   | Norwegian | Eli Huseby |
-| es   | Spanish   | nieled     |
 
 ## Supported tests
 
