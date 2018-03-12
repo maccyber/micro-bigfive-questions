@@ -43,18 +43,18 @@
     "url": "https://github.com/maccyber/micro-bigfive-questions/issues"
   },
   "devDependencies": {
-    "ava": "0.22.0",
-    "axios": "0.16.2",
-    "coveralls": "2.13.1",
-    "nsp": "2.8.0",
-    "nyc": "11.2.1",
-    "standard": "10.0.3",
-    "test-listen": "1.0.2",
-    "micro-dev": "1.2.2"
+    "ava": "0.25.0",
+    "axios": "0.18.0",
+    "coveralls": "3.0.0",
+    "nsp": "3.2.1",
+    "nyc": "11.4.1",
+    "standard": "11.0.0",
+    "test-listen": "1.1.0",
+    "micro-dev": "2.2.0"
   },
   "dependencies": {
-    "marked": "0.3.6",
-    "micro": "8.0.4"
+    "marked": "0.3.17",
+    "micro": "9.1.4"
   },
   "now": {
     "alias": "questions.bigfive.world",
